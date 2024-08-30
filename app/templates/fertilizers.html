@@ -56,7 +56,7 @@
 </head>
 
 
-<body background="../static/cropbg3.jpg">
+<body background="../static/ferbg.jpg">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
@@ -73,10 +73,10 @@
                             <a class="nav-link mx-lg-2" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="fertilizers.html">Fertilizer</a>
+                            <a class="nav-link mx-lg-2 active" href="fertilizers.html">Fertilizer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2 active" href="crop.html">Crop</a>
+                            <a class="nav-link mx-lg-2" href="crop.html">Crop</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="disease.html">Disease</a>
@@ -98,57 +98,60 @@
         </div>
     </nav>
     <center>
-    <br><br><br><br><br><h3><b>Find Out the most Suitable Crop to <br>Grow on your Soil</b></h3>
+    <br><br><br><br><br><h3 style="color: black;"><b>Find out the <b>Fertilizers</b> you need <br>based on your <b>Soil</b></b></h3>
     <br>
     <form class="form" style="width: 500px;">
-        <div class="form-group" style="width: 490px;" >
-          <label for="formGroupExampleInput"><b>Nitrogen*</b></label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the Value (example:50)">
+        <div class="form-group" style="width: 490px;">
+          <label for="formGroupExampleInput" style="color:black;"><b>Nitrogen*</b></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the Value (example:50)"><br>
         </div>
         <div class="form-group" style="width: 490px;">
-          <label for="formGroupExampleInput2"><b>Phosphorus*</b></label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter the Value (example:50)">
+          <label for="formGroupExampleInput2" style="color:black;"><b>Phosphorus*</b></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter the Value (example:50)"><br>
         </div>
         <div class="form-group" style="width: 490px;">
-            <label for="formGroupExampleInput"><b>Pottasium*</b></label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the Value (example:50)">
-          </div>
-          <div class="form-group" style="width: 490px;">
-            <label for="formGroupExampleInput2"><b>pH*</b></label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter the Value (example:50)">
-          </div>
-          <div class="form-group" style="width: 490px;">
-            <label for="formGroupExampleInput"><b>Rainfall(in mm)*</b></label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the Value (example:50)">
-          </div>
-          <div class="form-group">
-            <label for="State" style="font-size: 17px "><b>State</b></label>
+            <label for="formGroupExampleInput" style="color:black;"><b>Pottasium*</b></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the Value (example:50)"><br>
+        </div>
+        <div class="form-group" style="width: 490px;">
+            <label for="crop" style="color: black;"
+              ><b>Crop you want to grow*</b></label
+            >
             <select
-              onchange="print_city('state', this.selectedIndex);"
-              id="sts"
-              name="stt"
+              name="cropname"
               class="form-control"
-              style="color: black;"
-              
-              required
-            ></select>
-            <br />
-            <label for="City" style="font-size: 17px"><b>City</b></label>
-            <select
-              id="state"
-              class="form-control"
-              name="city"
-              style="color: black;"
-              required
-            ></select>
-            <script language="javascript">
-              print_state("sts");
-            </script>
-          </div><br>
-          <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">Predict Crops</button>
+              id="crop"
+              placeholder="Select Crop"
+              required><option selected>Select Crop</option>
+              <option>rice</option>
+              <option>maize</option>
+              <option>chickpea</option>
+              <option>kidneybeans</option>
+              <option>pigeonpeas</option>
+              <option>mothbeans</option>
+              <option>mungbean</option>
+              <option>blackgram</option>
+              <option>lentil</option>
+              <option>pomegranate</option>
+              <option>banana</option>
+              <option>mango</option>
+              <option>grapes</option>
+              <option>watermelon</option>
+              <option>muskmelon</option>
+              <option>apple</option>
+              <option>orange</option>
+              <option>papaya</option>
+              <option>coconut</option>
+              <option>cotton</option>
+              <option>jute</option>
+              <option>coffee</option>
+            </select><br>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Predict Fertilizers</button>
+            </div>
+            <br>
           </div>
-          <br>
+        
     </form>
     </center>
   </body>
