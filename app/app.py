@@ -23,6 +23,13 @@ def shop():
 def login():
     return render_template('login.html')
 
+@app.route('/disease.html')
+def disease():
+    return render_template('disease.html')
+
+@app.route('/fertilizers.html')
+def fertilizer():
+    return render_template('fertilizers.html')
 
 if __name__ == "__main__":
     app.run(debug=True) 
