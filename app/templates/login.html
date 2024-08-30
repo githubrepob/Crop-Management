@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <div class="login-box">
-        <h2>Login</h2>
-        <form>
-            <div class="input-group">
-                <input type="text" placeholder="Username" required>
-                <span class="input-icon">
-                    <i class="fa fa-user"></i>
-                </span>
+    <div class="row vh-100 g-0">
+        <!--   Left side -->
+        <div class="col-lg-6 position-relative d-none d-lg-block">
+            <div class="bg-holder" style="background-image: url(../static/bg.jpg);"></div>
+        </div>
+        <!--/ Left side  -->
+
+        <!-- Right side -->
+        <div class="col-lg-6">
+            <div class="row align-items-center justify-content-center h-100 g-0 px-4 px-sm-0">
+                <div class="col col-sm-6 col-lg-7 col-xl-6">
+
+                    <!-- Logo -->
+                    <a href="#" class="d-flex justify-content-center mb-4">
+                        <img src="../static/agroc.png" alt="" width="60">
+                    </a>
+                    <!--? Logo  -->
+
+                    <div class="text-center mb-5">
+                        <h3 class="fw-bold">Log In</h3>
+                        <p class="text-secondary">Get access to your account</p>
+                    </div>
+
+                    <!-- social login -->
+                    <button class="btn btn-lg btn-outline-secondary btn-outline-custom w-100 mb-3">
+                        <i class='bx bxl-google text-danger me-1 fs-6'></i> Login with Google</button>
+                    <button class="btn btn-lg btn-outline-secondary btn-outline-custom w-100">
+                        <i class='bx bxl-facebook text-primary me-1 fs-6'></i> Login with Facebook</button>
+                    <!--/ social login  -->
+
+                    <!-- divider -->
+                    <div class="position-relative">
+                        <hr class="text-secondary divider">
+                        <div class="divider-content-center">Or</div>
+                    </div>
+                    <!--/divider  -->
+
+                    <!-- Form -->
+                     <form action="#">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bx bx-user"></i>
+                            </span>
+                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Username">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bx bx-lock-alt"></i>
+                            </span>
+                            <input type="password" class="form-control form-control-lg fs-6" placeholder="Password">
+                        </div>
+                        <div class="input-group mb-3 justify-content-between">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="formcheck">
+                                <label for="formCheck" class="form-check-label text-secondary"><small>Remember Me</small></label> 
+                            </div>
+                            <div>
+                                <small><a href="#">Forget Password</a></small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-lg w-100 mb-3">Login</button>
+                     </form>
+                    <!--/ Form -->
+
+                    <div class="text-center">Don't have an account<a href="#" class="fw-bold">Sign Up</a></div>
+
+                </div>
             </div>
-            <div class="input-group">
-                <input type="password" placeholder="Password" required>
-                <span class="input-icon">
-                    <i class="fa fa-key"></i>
-                </span>
-            </div>
-            <div class="options">
-                <label>
-                    <input type="checkbox"> Remember me
-                </label>
-                <a href="#">Forgot password?</a>
-            </div>
-            <button type="submit" class="login-button">Login</button>
-            <p class="register-link">Don't have an account? <a href="#">Register</a></p>
-        </form>
+        </div>
+
+        <!--/ Right side  -->
     </div>
+
 </body>
+
+
 </html>
