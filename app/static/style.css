@@ -110,3 +110,128 @@ btn-close:focus {
     gap: 20px;
     height: 100px;
 }
+
+/* login-system-->Nishi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://th.bing.com/th/id/OIP.GdAcyRLtJ2yZIy7ctc2CkQHaE6?w=1280&h=850&rs=1&pid=ImgDetMain') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 25px;
+    position: relative;
+    width: 100%; /* Match width with button */
+}
+
+.input-icon {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding-right: 40px; /* Adjust padding to avoid overlap with the icon */
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.options label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    width: 100%; /* Same width as input boxes */
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #e8e8e8;
+}
+
+.register-link {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
